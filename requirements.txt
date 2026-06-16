@@ -1,0 +1,6 @@
+uvicorn
+gunicorn
+fastapi
+pyserial
+python-escpos
+setuptools
