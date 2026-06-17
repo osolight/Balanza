@@ -33,6 +33,8 @@ El instalador los configura automáticamente:
 
 ## ⚙️ Instalación automática (RECOMENDADO)
 
+Este método instala todo el sistema automáticamente (dependencias, usuario, servicio systemd y permisos USB).
+
 Ejecuta:
 
 ```bash
@@ -40,7 +42,12 @@ wget https://raw.githubusercontent.com/osolight/Balanza/main/install_balanza.sh
 chmod +x install_balanza.sh
 sudo ./install_balanza.sh
 
+---
+
 ## 🔧 Instalación manual (modo desarrollo)
+
+Este método es para desarrollo o pruebas locales.
+
 git clone https://github.com/osolight/Balanza.git
 cd Balanza
 
@@ -49,9 +56,13 @@ source venv/bin/activate
 
 pip install -r requirements.txt
 
+---
+
 ## ▶️ Ejecutar el servicio
 sudo systemctl start balanza.service
 sudo systemctl status balanza.service
+
+---
 
 ## 🌐 API
 http://localhost:9000
